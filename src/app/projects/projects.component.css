@@ -1,0 +1,91 @@
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.box-card {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: #57a5c6;
+}
+
+.box-card.full-width {
+  grid-column: span 2;
+}
+
+.projects-header {
+  width: 100%; 
+  font-size:24px;
+  margin: 20px 0; 
+  background-color: #ffffff;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-sizing: border-box; 
+}
+
+mat-card-content img {
+  max-width: 100px; 
+  max-height: 150px; 
+  margin-right: 16px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.box-card mat-card-header mat-card-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.box-card mat-card-content p {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.container {
+  background-color: #f1eaea;
+  color: #333;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+
+@media (max-width: 600px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .box-card mat-card-header mat-card-title {
+    font-size: 40px;
+  }
+
+  .box-card mat-card-content p {
+    font-size: 40px;
+  }
+  
+  h4 {
+    font-size: 40px;
+  }
+}

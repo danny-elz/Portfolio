@@ -1,0 +1,51 @@
+.contact-container {
+  padding: 20px;
+  background-color: #fff; 
+  color: rgb(0, 0, 0); 
+  font-family: Arial, sans-serif;
+  border-radius: 5px; 
+}
+
+
+.contact-container.dark-mode {
+  background-color: #333; 
+  color: #fff; 
+}
+
+.contact-container h4 {
+  font-size: 24px;
+  color: inherit; 
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-left: 20px;
+}
+
+.contact-container .contact-line {
+  padding-left: 20px;
+  font-size: 16px;
+  color: inherit; 
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.contact-container a {
+  color: #007bff; 
+  text-decoration: none;
+}
+
+.contact-container a:hover {
+  text-decoration: underline; 
+}
+
+@media (max-width: 600px) {
+  .contact-container h4 {
+      font-size: 20px;
+      padding-left: 15px;
+  }
+
+  .contact-container .contact-line {
+      font-size: 14px;
+      padding-left: 15px;
+  }
+}

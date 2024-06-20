@@ -1,0 +1,6 @@
+<div class="contact-container" [ngClass]="{'dark-mode': darkMode}">
+    <h4>Contact Information</h4>
+    <p class="contact-line">Email: <a href="mailto:{{ userData.email }}">{{ userData.email }}</a></p>
+    <p class="contact-line">Phone: {{ userData.phone }}</p>
+    <p class="contact-line">LinkedIn: <a href="{{ userData.linkedin }}" target="_blank">{{ userData.linkedin }}</a></p>
+</div>
