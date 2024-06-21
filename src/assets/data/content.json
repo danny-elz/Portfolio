@@ -1,0 +1,12 @@
+{
+    "ContentData": {
+        "first": "Danny", 
+        "last": "Elzein",
+        "role": "Software Engineer", 
+        "email": "elzeind@sheridancollege.ca", 
+        "linkedin": "https://www.linkedin.com/in/danny-elzein", 
+        "phone": "6475682063",
+        "about": "I am a solution oriented Software Developer, lifelong learner, and fitness enthusiast with a background in software development and network engineering. I enjoy development because of the satisfaction I get by overcoming challenges. I am motivated by the opportunity that software provides to positively impact the life of an individual, and the world as a whole.",
+        "technology": "Angular, HTML, CSS, TS"
+    }
+}
