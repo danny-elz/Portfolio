@@ -1,16 +1,19 @@
 <div class="projects-header" [ngClass]="{'dark-mode': darkMode}">
-    <h4>Projects</h4>
+  <h4>Projects</h4>
+</div>
+<div>
+  <h4>Filter Projects</h4>
+  <input type="text" id="filter" [(ngModel)]="filterQuery" (input)="filterSearch()">
 </div>
 
 <div class="cards-container" [ngClass]="{'dark-mode': darkMode}">
-    <mat-card class="box-card" *ngFor="let project of projects" >
-      <mat-card-header>
-        <mat-card-title>{{ project.name }}</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <img mat-card-image [src]="project.image">
-        <p>{{ project.subtitle }}</p>
-      </mat-card-content>
-    </mat-card>
+  <mat-card class="box-card" *ngFor="let project of filteredData">
+    <mat-card-header>
+      <mat-card-title>{{ project.name }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <img mat-card-image [src]="project.image">
+      <p>{{ project.subtitle }}</p>
+    </mat-card-content>
+  </mat-card>
 </div>
-
