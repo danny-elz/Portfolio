@@ -3,7 +3,7 @@
 </div>
 <div>
   <h4>Filter Projects</h4>
-  <input type="text" id="filter" [(ngModel)]="filterQuery" (input)="filterSearch()">
+  <input type="text" id="filter" [(ngModel)]="query" (input)="filterSearch()">
 </div>
 
 <div class="cards-container" [ngClass]="{'dark-mode': darkMode}">
