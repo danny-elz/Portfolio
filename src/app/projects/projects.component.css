@@ -17,16 +17,13 @@
   padding: 16px;
   box-sizing: border-box;
   background-color: #57a5c6;
-}
-
-.box-card.full-width {
-  grid-column: span 2;
+  width: 100%;
 }
 
 .projects-header {
-  width: 100%; 
-  font-size:24px;
-  margin: 20px 0; 
+  width: 100%;
+  font-size: 24px;
+  margin: 20px 0;
   background-color: #ffffff;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
@@ -34,12 +31,12 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 mat-card-content img {
-  max-width: 100px; 
-  max-height: 150px; 
+  max-width: 100px;
+  max-height: 150px;
   margin-right: 16px;
   border-radius: 8px;
   object-fit: cover;
@@ -60,14 +57,43 @@ mat-card-content img {
   margin-top: 10px;
 }
 
-.container {
-  background-color: #f1eaea;
-  color: #333;
+.like-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
-.dark-mode {
+.like-container mat-checkbox {
+  margin-right: 8px;
+}
+
+
+.dark-mode .cards-container {
   background-color: #333;
-  color: #fff;
+}
+
+.dark-mode .box-card {
+  background-color: #424242;
+  color: white;
+  border-color: #555;
+}
+
+.dark-mode .projects-header {
+  background-color: #424242;
+  color: white;
+  border-color: #555;
+}
+
+.dark-mode .box-card mat-card-header mat-card-title {
+  color: white;
+}
+
+.dark-mode .box-card mat-card-content p {
+  color: white;
+}
+
+.spacing {
+  margin-bottom: 16px; 
 }
 
 @media (max-width: 600px) {
@@ -83,7 +109,8 @@ mat-card-content img {
   .box-card mat-card-content p {
     font-size: 40px;
   }
-  
+
+
   h4 {
     font-size: 40px;
   }

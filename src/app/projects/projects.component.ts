@@ -1,5 +1,6 @@
 import { Component, Input} from '@angular/core';
 import { Project } from '../classSetups';
+import { LikebuttonService } from '../likebutton.service';
 
 @Component({
   selector: 'app-projects',
@@ -27,4 +28,10 @@ export class ProjectsComponent {
       );
     }
   }
+
+  constructor (private likeservice: LikebuttonService){}
+
+  like(elem: any) {this.likeservice.likeproject(elem)}
+
+
 }
