@@ -4,9 +4,9 @@
       <input type="checkbox" [checked]="darkMode" (change)="darkMode = !darkMode"> Toggle Dark Mode
     </label>
   </div>
-  
   <app-header [darkMode]="darkMode" [userData]="contentData"></app-header>
   <app-about [darkMode]="darkMode" [userData]="contentData"></app-about>
-  <app-projects [darkMode]="darkMode" [projects]="projectData"></app-projects>
+  <router-outlet></router-outlet>
   <app-contact [darkMode]="darkMode" [userData]="contentData"></app-contact>
-  <app-footer [darkMode]="darkMode" [userData]="contentData"></app-footer>  
+  <app-footer [darkMode]="darkMode" [userData]="contentData"></app-footer>
+  

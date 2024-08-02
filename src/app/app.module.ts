@@ -13,11 +13,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { LikebuttonService } from './likebutton.service';
 import { Routes, RouterModule } from '@angular/router';
-
-const approutes: Routes = [
-  {path: "", component: ProjectsComponent },
-  { path: "project/:projectId", component: ProjectsComponent }
-];
+import { ProjectDetailsComponent } from './project-detail/project-detail.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,6 +24,7 @@ const approutes: Routes = [
     AboutComponent,
     ContactComponent,
     ProjectsComponent,
+    ProjectDetailsComponent
   ],
   imports: [
     MaterialModule,
@@ -35,9 +33,10 @@ const approutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(approutes)
+    HttpClientModule
+
   ],
-  providers: [provideClientHydration(), LikebuttonService],
+  providers: [LikebuttonService],
   bootstrap: [AppComponent]
 })
 

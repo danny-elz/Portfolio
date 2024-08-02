@@ -1,3 +1,6 @@
+<div>
+  <input type="text" [(ngModel)]="query" (input)="filterSearch()" placeholder="Search projects">
+</div>
 <div class="cards-container" [ngClass]="{'dark-mode': darkMode}">
   <mat-card class="box-card" *ngFor="let project of filteredData" id="project-{{project.id}}">
     <mat-card-header>
@@ -6,13 +9,12 @@
     <mat-card-content>
       <div class="like-container">
         <mat-checkbox (click)="like(project)"></mat-checkbox>
-        <span>Like</span>
+        <span like-text>Like</span>
       </div>
       <div class="spacing">
-        <button mat-raised-button color="accent">Click</button>
+        <button mat-raised-button color="accent" (click)="goToDetails(project.id)">View Details</button>
       </div>
       <img mat-card-image [src]="project.image">
-      <p>{{project.subtitle}}</p>
     </mat-card-content>
   </mat-card>
 </div>
